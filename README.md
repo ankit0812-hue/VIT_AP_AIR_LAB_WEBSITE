@@ -1,4 +1,4 @@
-# VITAI
+# VIT_AP_AIR_LAB
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.19.
 
