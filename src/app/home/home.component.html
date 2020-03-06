@@ -1,0 +1,137 @@
+<!-- Home Page Main Section -->
+
+<section class="col-md-12 home-wrap-1">
+  <div class="col-md-6 home-welcome">
+    <h1>AIR Lab</h1>
+    <p>An interdisciplinary research lab catering to the interests and erudition of aspiring researchers and innovators in the field of Artificial Intelligence and Robotics.</p>
+    <button mat-flat-button class="myBtn" (click)="getStarted(getStart)">Get Started &nbsp; <mat-icon>arrow_downward</mat-icon></button>
+  </div>
+</section>
+
+<!-- Home Page Main Section Ends Here -->
+
+
+
+<!-- Home Page Updates and Achievements Section -->
+
+<section #getStart class="col-md-12 home-latest-achieve-section">
+  <div class="row">
+    <div class="col-md-8">
+      <div class="col-md-12 section-header-wrap">
+        <h3 class="section-head">
+          Achievements
+        </h3>
+        <span>
+          <button mat-flat-button (click)="swipeHor.directiveRef.prevSlide()">
+            <mat-icon>arrow_back_ios</mat-icon>
+          </button>
+          <button mat-flat-button (click)="swipeHor.directiveRef.nextSlide()">
+            <mat-icon>arrow_forward_ios</mat-icon>
+          </button>
+        </span>
+      </div>
+      <div class="col-md-12 swipeWrapper">
+        <swiper [config]="swiperConfigHorizontal" #swipeHor [(index)]="scrollIndex">
+          <div class="cust-pad" *ngFor="let achieve of achievements">
+            <div class="col-md-12 achive-card">
+              <img src="{{ achieve.imgUrl }}" alt="{{ achieve.id }}">
+              <div class="achive-content">
+                <h4>{{ achieve.heading }}</h4>
+                <p>{{ achieve.content }}</p>
+                <p><a href="#">Read More</a></p>
+              </div>
+            </div>
+          </div>
+        </swiper>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="col-md-12 section-header-wrap">
+        <h3 class="section-head">
+          Updates
+        </h3>
+        <span>
+          <button mat-flat-button (click)="updatesScroll('u')">
+            <mat-icon>expand_less</mat-icon>
+          </button>
+          <button mat-flat-button (click)="updatesScroll('d')">
+            <mat-icon>expand_more</mat-icon>
+          </button>
+        </span>
+      </div>
+
+
+      <div class="col-md-12 home-updates">
+        <div class="col-md-12 update-wrapper" id="update">
+          <div class="col-md-12" *ngFor="let achieve of achievements">
+            <div class="col-md-12 update-body">
+              <div class="img">
+                <img src="{{ achieve.imgUrl }}" alt="" />
+              </div>
+              <div class="content">
+                <h4>Title Goes Here</h4>
+                <p>Some Description Goes here for the latest update together with the link.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Home Page Updates and Achievements Section Ends Here -->
+
+
+
+<!-- Home Page Capstone Counter -->
+
+<section class="col-md-12 capstone-section" id="counter">
+
+  <div class="col-md-12 section-header-wrap">
+    <h3 class="section-head">
+      Capstones Completed
+    </h3>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="col-md-12 counter-content">
+        <p class="counter-logo">
+          <mat-icon>school</mat-icon>
+        </p>
+        <div class="counter-content">
+          <div class="counter-value" data-count="300">0</div>
+          <p class="counter-title">Total Grants</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="col-md-12 counter-content">
+        <p class="counter-logo">
+          <mat-icon>group</mat-icon>
+        </p>
+        <div class="counter-content">
+          <div class="counter-value" data-count="1000">100</div>
+          <p class="counter-title">Team Members</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="col-md-12 counter-content">
+        <p class="counter-logo">
+          <mat-icon>emoji_events</mat-icon>
+        </p>
+        <div class="counter-content">
+          <div class="counter-value" data-count="150">20</div>
+          <p class="counter-title">Total Awards</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Home Page Capstone Counter Ends Here -->
+
+<footer class="col-md-12  footer">
+  Powered By - AppyHub | &copy; {{ year }} - VIT AP
+</footer>

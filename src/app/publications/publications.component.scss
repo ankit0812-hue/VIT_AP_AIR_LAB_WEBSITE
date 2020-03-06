@@ -1,0 +1,299 @@
+$primeColor: #ff4800;
+
+.search {
+  position: fixed;
+  top: 8px;
+  right: 10px;
+  z-index: 999999;
+  width: auto;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  overflow-y: hidden;
+  transition: all 1s linear;
+
+  #openButton {
+    background: transparent;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    box-sizing: none;
+    padding: 10px;
+    border-radius: 100%;
+    color: #fff;
+    outline: none;
+  }
+
+  #openButton:active, #openButton:target, #openButton:focus {
+    outline: none;
+  }
+
+  .search-box {
+    margin-top: 5px;
+    min-width: 300px;
+    background-color: #000000;
+
+    input[type="text"] {
+      width: 100%;
+      background: transparent;
+      border: 0px;
+      border-bottom: 2px solid #ffffff;
+      text-indent: 5px;
+      padding: 10px;
+      color: #fff;
+    }
+  }
+}
+
+.open-search {
+  height: 100%;
+}
+
+.row {
+  margin: 0px;
+}
+
+::ng-deep .mat-checkbox-frame {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+::ng-deep .mat-checkbox-checked.mat-accent {
+  .mat-checkbox-ripple .mat-ripple-element {
+      background-color: $primeColor !important;
+  }
+
+  .mat-checkbox-background, .mat-checkbox-indeterminate.mat-accent .mat-checkbox-background {
+      background-color: $primeColor;
+   }
+}
+
+::ng-deep .mat-checkbox.mat-accent {
+  .mat-checkbox-ripple .mat-ripple-element {
+      background-color: $primeColor !important;
+  }
+}
+
+.publication-main {
+  padding-top: 85px;
+  background-color: #000000;
+  min-height: 100vh;
+  position: relative;
+
+  .filter-section {
+    position: relative;
+    padding: 40px 0px 40px 25px;
+
+    .filter {
+      position: fixed;
+      display: flex;
+      flex-direction: column;
+
+      h3 {
+        color: $primeColor;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        margin-top: 15px;
+
+        mat-checkbox {
+          color: rgba(255, 255, 255, 0.8);
+        }
+      }
+    }
+  }
+
+  .publication-section {
+    position: relative;
+
+    h1 {
+      color: rgba(255, 255, 255, 0.8);
+      padding-bottom: 5px;
+      position: relative;
+      margin-bottom: 40px;
+    }
+
+    h1::after {
+      content: '';
+      position: absolute;
+      display: inline-block;
+      width: 100px;
+      height: 2px;
+      background: $primeColor;
+      bottom: 0px;
+      left: 0px;
+    }
+
+    .pub-card-main-big {
+      padding: 0px;
+      display: flex;
+      margin: 10px 0px;
+      border: 0.3px solid rgba(255, 255, 255, 0.1);
+
+      img {
+        flex: 1;
+        width: 100%;
+        height: auto;
+        opacity: 0.7;
+      }
+
+      .pub-content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+
+        h3 {
+          color: rgba(255, 255, 255, 0.8);
+        }
+
+        p {
+          color: rgba(255, 255, 255, 0.5);
+        }
+
+        a {
+          display: inline-block;
+          color: $primeColor;
+        }
+
+        .pub-footer {
+          span {
+            float: right;
+            padding-right: 20px;
+          }
+        }
+      }
+    }
+
+    .pub-card-main-small {
+      padding: 0px;
+      display: flex;
+      margin: 10px 0px;
+      flex-direction: column;
+      border: 0.3px solid rgba(255, 255, 255, 0.1);
+
+      img {
+        flex: 1;
+        width: 100%;
+        height: auto;
+        opacity: 0.7;
+      }
+
+      .pub-content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+
+        h3 {
+          color: rgba(255, 255, 255, 0.8);
+        }
+
+        p {
+          color: rgba(255, 255, 255, 0.5);
+        }
+
+        a {
+          display: inline-block;
+          color: $primeColor;
+        }
+
+        .pub-footer {
+          span {
+            float: right;
+            padding-right: 20px;
+          }
+        }
+      }
+    }
+
+
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  .publication-main {
+    padding-top: 85px;
+    background-color: #000000;
+    min-height: 100vh;
+    position: relative;
+
+    .pub-card-main-big {
+      padding: 0px;
+      display: flex;
+      margin: 10px 0px;
+      flex-direction: column;
+      border: 0.3px solid rgba(255, 255, 255, 0.1);
+
+      img {
+        flex: 1;
+        width: 100%;
+        height: auto;
+        opacity: 0.7;
+      }
+
+      .pub-content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+
+        h3 {
+          color: rgba(255, 255, 255, 0.8);
+        }
+
+        p {
+          color: rgba(255, 255, 255, 0.5);
+        }
+
+        a {
+          display: inline-block;
+          color: $primeColor;
+        }
+
+        .pub-footer {
+          span {
+            float: right;
+            padding-right: 20px;
+          }
+        }
+      }
+    }
+
+    .filter-section {
+      position: relative;
+      padding: 40px 0px 40px 25px;
+
+      .filter {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+
+        h3 {
+          color: $primeColor;
+        }
+
+        form {
+          display: flex;
+          flex-direction: column;
+          margin-top: 15px;
+
+          mat-checkbox {
+            color: rgba(255, 255, 255, 0.8);
+          }
+        }
+      }
+    }
+  }
+
+  .filter-section {
+    position: relative;
+    padding: 20px 0px 20px 25px;
+  }
+}

@@ -1,0 +1,189 @@
+$primeColor: #ff4800;
+
+.projects {
+  padding: 0px;
+  background-color: #fff;
+  z-index: 99999;
+  min-height: 100vh;
+}
+
+.row {
+  margin: 0px;
+  padding: 0px;
+
+  .project-head {
+    min-height: 100vh;
+    display: flex;
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 30vh 30px;
+
+    .project-intro {
+      position: fixed;
+      display: flex;
+      flex-direction: column;
+      width: 30%;
+
+      h1 {
+        color: $primeColor;
+      }
+
+      p {
+        color: rgba(255, 255, 255, 0.8);
+      }
+
+      button {
+        outline: none;
+        background: $primeColor;
+        color: #fff;
+        border-radius: 25px;
+        padding: 8px 40px;
+        margin-right: 10px;
+        border: 0px;
+      }
+
+      .action-container {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+
+  .project-accomplished {
+    min-height: 100vh;
+    padding: 25px;
+    z-index: 99999;
+    background: #fff;
+    position: relative;
+
+    h2 {
+      padding-bottom: 10px;
+      margin-bottom: 30px;
+      position: relative;
+      color: $primeColor;
+    }
+
+    h3 {
+      color : $primeColor;
+    }
+
+    p.developer {
+      color: #797979;
+    }
+
+    a {
+      color: $primeColor;
+    }
+  }
+
+  .project-ongoing {
+    min-height: 100vh;
+    padding: 25px;
+    z-index: 99999;
+    background: #fff;
+    position: relative;
+
+    h2 {
+      padding-bottom: 10px;
+      margin-bottom: 30px;
+      position: relative;
+      color: $primeColor;
+    }
+
+    h3 {
+      color : $primeColor;
+    }
+
+    p.developer {
+      color: #797979;
+    }
+
+    a {
+      color: $primeColor;
+    }
+  }
+}
+
+.project-card {
+  padding: 15px;
+  margin: 40px 0px 20px 0px;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+
+  img {
+    width: 50%;
+    height: auto;
+    float: left;
+    padding: 10px 20px 5px 0px;
+  }
+
+  h3 {
+    padding: 10px 0px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .row {
+    margin: 0px;
+    padding: 0px;
+
+    .project-head {
+      min-height: 50vh;
+      height: 50vh;
+      display: flex;
+      height: auto;
+      background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
+      align-items: center;
+      justify-content: center;
+      padding: 30vh 30px;
+
+      .project-intro {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 90%;
+
+        h1 {
+          color: $primeColor;
+        }
+
+        p {
+          color: rgba(255, 255, 255, 0.8);
+        }
+
+        .action-container {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+
+          button {
+            outline: none;
+            background: $primeColor;
+            color: #fff;
+            border-radius: 25px;
+            padding: 8px 40px;
+            margin: 5px 0px;
+            border: 0px;
+          }
+        }
+      }
+    }
+
+    .project-accomplished {
+      min-height: 100vh;
+      padding: 70px 25px;
+      z-index: 0;
+      background: #fff;
+      position: relative;
+    }
+
+    .project-ongoing {
+      min-height: 100vh;
+      padding: 70px 25px;
+      z-index: 0;
+      background: #fff;
+      position: relative;
+    }
+  }
+}

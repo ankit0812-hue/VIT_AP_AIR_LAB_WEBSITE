@@ -1,0 +1,89 @@
+$primeColor: #ff4800;
+
+.row {
+  margin: 0px;
+  padding: 0px;
+}
+
+.muted-text {
+  color: grey;
+}
+
+.events-main {
+  padding-top: 80px;
+
+  h2 {
+    padding: 20px;
+  }
+
+  .menu-buttons {
+    display: flex;
+    justify-content: center;
+
+    button {
+      width: 100%;
+      background: #fff;
+      color: #000;
+      border: 1px solid $primeColor;
+      padding: 8px 0px;
+      margin: 5px 0px;
+      border-radius: 25px;
+      outline: none;
+      transition: all 0.3s ease-in;
+    }
+
+    .active {
+      background-color: $primeColor;
+      color: #fff;
+    }
+
+  }
+}
+
+.events {
+  .card {
+    padding: 0px;
+    margin: 20px 0px 20px 0px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    padding-bottom: 25px;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    h3 {
+      margin: 15px 0px;
+      padding: 0px 20px;
+      color: $primeColor;
+    }
+
+    p {
+      padding: 0px 20px;
+    }
+
+    .event-footer {
+      padding: 0px 20px 5px 20px;
+
+      p {
+        margin: 3px 0px;
+        color: grey;
+
+        b {
+          color: #737373;
+        }
+      }
+    }
+
+    a {
+      margin: 10px 20px;
+      display: inline-block;
+      padding: 10px 40px;
+      background: $primeColor;
+      color: #fff;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  }
+}

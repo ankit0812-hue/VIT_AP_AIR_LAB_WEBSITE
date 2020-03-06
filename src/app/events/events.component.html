@@ -1,0 +1,306 @@
+<div class="events-main">
+
+  <h2>Events</h2>
+
+  <div class="row">
+    <div class="col-md-2 menu-buttons">
+      <button id="guestButton" class="active" (click)="handleClick('guest')">Guest Lectures</button>
+    </div>
+    <div class="col-md-2 menu-buttons">
+      <button id="techButton" (click)="handleClick('tech')">Tech Events</button>
+    </div>
+    <div class="col-md-2 menu-buttons">
+      <button id="hiringButton" (click)="handleClick('hire')">Hiring</button>
+    </div>
+  </div>
+
+</div>
+
+<section class="events">
+  <div class="row">
+    <div class="col-md-4 animated zoomIn" *ngIf="isGuest">
+      <div class="col-md-12 card">
+        <img src="../../assets/images/about-back.png" alt="Banner" />
+        <h3>Event Name</h3>
+        <p class="muted-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque laboriosam eveniet nobis quos error nihil architecto velit amet repudiandae quo nostrum expedita ipsum dolores, quaerat, explicabo provident dolorem omnis ut.</p>
+        <div class="event-footer">
+          <p><b>Date - </b><span>12-01-2019</span></p>
+          <p><b>Time - </b><span>04:45 PM</span></p>
+          <p><b>Contact - </b><span>someone@example.com</span></p>
+        </div>
+        <a routerLink="/events">Register Now</a>
+      </div>
+    </div>
+
+
+    <div class="col-md-4 animated zoomIn" *ngIf="isGuest">
+      <div class="col-md-12 card">
+        <img src="../../assets/images/about-back.png" alt="Banner" />
+        <h3>Event Name</h3>
+        <p class="muted-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque laboriosam eveniet nobis quos error nihil architecto velit amet repudiandae quo nostrum expedita ipsum dolores, quaerat, explicabo provident dolorem omnis ut.</p>
+        <div class="event-footer">
+          <p><b>Date - </b><span>12-01-2019</span></p>
+          <p><b>Time - </b><span>04:45 PM</span></p>
+          <p><b>Contact - </b><span>someone@example.com</span></p>
+        </div>
+        <a routerLink="/events">Register Now</a>
+      </div>
+    </div>
+
+
+    <div class="col-md-4 animated zoomIn" *ngIf="isGuest">
+      <div class="col-md-12 card">
+        <img src="../../assets/images/about-back.png" alt="Banner" />
+        <h3>Event Name</h3>
+        <p class="muted-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque laboriosam eveniet nobis quos error nihil architecto velit amet repudiandae quo nostrum expedita ipsum dolores, quaerat, explicabo provident dolorem omnis ut.</p>
+        <div class="event-footer">
+          <p><b>Date - </b><span>12-01-2019</span></p>
+          <p><b>Time - </b><span>04:45 PM</span></p>
+          <p><b>Contact - </b><span>someone@example.com</span></p>
+        </div>
+        <a routerLink="/events">Register Now</a>
+      </div>
+    </div>
+
+
+    <div class="col-md-4 animated zoomIn" *ngIf="isTech">
+      <div class="col-md-12 card">
+        <img src="../../assets/images/about-back.png" alt="Banner" />
+        <h3>Event Name</h3>
+        <p class="muted-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque laboriosam eveniet nobis quos error nihil architecto velit amet repudiandae quo nostrum expedita ipsum dolores, quaerat, explicabo provident dolorem omnis ut.</p>
+        <div class="event-footer">
+          <p><b>Date - </b><span>12-01-2019</span></p>
+          <p><b>Time - </b><span>04:45 PM</span></p>
+          <p><b>Contact - </b><span>someone@example.com</span></p>
+        </div>
+        <a routerLink="/events">Register Now</a>
+      </div>
+    </div>
+
+
+    <div class="col-md-4 animated zoomIn" *ngIf="isHiring">
+      <div class="col-md-12 card">
+        <img src="../../assets/images/about-back.png" alt="Banner" />
+        <h3>Event Name</h3>
+        <p class="muted-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque laboriosam eveniet nobis quos error nihil architecto velit amet repudiandae quo nostrum expedita ipsum dolores, quaerat, explicabo provident dolorem omnis ut.</p>
+        <div class="event-footer">
+          <p><b>Date - </b><span>12-01-2019</span></p>
+          <p><b>Time - </b><span>04:45 PM</span></p>
+          <p><b>Contact - </b><span>someone@example.com</span></p>
+        </div>
+        <a routerLink="/events">Register Now</a>
+      </div>
+    </div>
+
+
+    <div class="col-md-4 animated zoomIn" *ngIf="isGuest">
+      <div class="col-md-12 card">
+        <img src="../../assets/images/about-back.png" alt="Banner" />
+        <h3>Event Name</h3>
+        <p class="muted-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque laboriosam eveniet nobis quos error nihil architecto velit amet repudiandae quo nostrum expedita ipsum dolores, quaerat, explicabo provident dolorem omnis ut.</p>
+        <div class="event-footer">
+          <p><b>Date - </b><span>12-01-2019</span></p>
+          <p><b>Time - </b><span>04:45 PM</span></p>
+          <p><b>Contact - </b><span>someone@example.com</span></p>
+        </div>
+        <a routerLink="/events">Register Now</a>
+      </div>
+    </div>
+
+    <div class="col-md-4 animated zoomIn" *ngIf="isGuest">
+      <div class="col-md-12 card">
+        <img src="../../assets/images/about-back.png" alt="Banner" />
+        <h3>Event Name</h3>
+        <p class="muted-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque laboriosam eveniet nobis quos error nihil architecto velit amet repudiandae quo nostrum expedita ipsum dolores, quaerat, explicabo provident dolorem omnis ut.</p>
+        <div class="event-footer">
+          <p><b>Date - </b><span>12-01-2019</span></p>
+          <p><b>Time - </b><span>04:45 PM</span></p>
+          <p><b>Contact - </b><span>someone@example.com</span></p>
+        </div>
+        <a routerLink="/events">Register Now</a>
+      </div>
+    </div>
+
+
+    <div class="col-md-4 animated zoomIn" *ngIf="isHiring">
+      <div class="col-md-12 card">
+        <img src="../../assets/images/about-back.png" alt="Banner" />
+        <h3>Event Name</h3>
+        <p class="muted-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque laboriosam eveniet nobis quos error nihil architecto velit amet repudiandae quo nostrum expedita ipsum dolores, quaerat, explicabo provident dolorem omnis ut.</p>
+        <div class="event-footer">
+          <p><b>Date - </b><span>12-01-2019</span></p>
+          <p><b>Time - </b><span>04:45 PM</span></p>
+          <p><b>Contact - </b><span>someone@example.com</span></p>
+        </div>
+        <a routerLink="/events">Register Now</a>
+      </div>
+    </div>
+
+
+    <div class="col-md-4 animated zoomIn" *ngIf="isGuest">
+      <div class="col-md-12 card">
+        <img src="../../assets/images/about-back.png" alt="Banner" />
+        <h3>Event Name</h3>
+        <p class="muted-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque laboriosam eveniet nobis quos error nihil architecto velit amet repudiandae quo nostrum expedita ipsum dolores, quaerat, explicabo provident dolorem omnis ut.</p>
+        <div class="event-footer">
+          <p><b>Date - </b><span>12-01-2019</span></p>
+          <p><b>Time - </b><span>04:45 PM</span></p>
+          <p><b>Contact - </b><span>someone@example.com</span></p>
+        </div>
+        <a routerLink="/events">Register Now</a>
+      </div>
+    </div>
+
+
+    <div class="col-md-4 animated zoomIn" *ngIf="isGuest">
+      <div class="col-md-12 card">
+        <img src="../../assets/images/about-back.png" alt="Banner" />
+        <h3>Event Name</h3>
+        <p class="muted-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque laboriosam eveniet nobis quos error nihil architecto velit amet repudiandae quo nostrum expedita ipsum dolores, quaerat, explicabo provident dolorem omnis ut.</p>
+        <div class="event-footer">
+          <p><b>Date - </b><span>12-01-2019</span></p>
+          <p><b>Time - </b><span>04:45 PM</span></p>
+          <p><b>Contact - </b><span>someone@example.com</span></p>
+        </div>
+        <a routerLink="/events">Register Now</a>
+      </div>
+    </div>
+
+
+    <div class="col-md-4 animated zoomIn" *ngIf="isGuest">
+      <div class="col-md-12 card">
+        <img src="../../assets/images/about-back.png" alt="Banner" />
+        <h3>Event Name</h3>
+        <p class="muted-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque laboriosam eveniet nobis quos error nihil architecto velit amet repudiandae quo nostrum expedita ipsum dolores, quaerat, explicabo provident dolorem omnis ut.</p>
+        <div class="event-footer">
+          <p><b>Date - </b><span>12-01-2019</span></p>
+          <p><b>Time - </b><span>04:45 PM</span></p>
+          <p><b>Contact - </b><span>someone@example.com</span></p>
+        </div>
+        <a routerLink="/events">Register Now</a>
+      </div>
+    </div>
+
+
+    <div class="col-md-4 animated zoomIn" *ngIf="isHiring">
+      <div class="col-md-12 card">
+        <img src="../../assets/images/about-back.png" alt="Banner" />
+        <h3>Event Name</h3>
+        <p class="muted-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque laboriosam eveniet nobis quos error nihil architecto velit amet repudiandae quo nostrum expedita ipsum dolores, quaerat, explicabo provident dolorem omnis ut.</p>
+        <div class="event-footer">
+          <p><b>Date - </b><span>12-01-2019</span></p>
+          <p><b>Time - </b><span>04:45 PM</span></p>
+          <p><b>Contact - </b><span>someone@example.com</span></p>
+        </div>
+        <a routerLink="/events">Register Now</a>
+      </div>
+    </div>
+
+
+    <div class="col-md-4 animated zoomIn" *ngIf="isHiring">
+      <div class="col-md-12 card">
+        <img src="../../assets/images/about-back.png" alt="Banner" />
+        <h3>Event Name</h3>
+        <p class="muted-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque laboriosam eveniet nobis quos error nihil architecto velit amet repudiandae quo nostrum expedita ipsum dolores, quaerat, explicabo provident dolorem omnis ut.</p>
+        <div class="event-footer">
+          <p><b>Date - </b><span>12-01-2019</span></p>
+          <p><b>Time - </b><span>04:45 PM</span></p>
+          <p><b>Contact - </b><span>someone@example.com</span></p>
+        </div>
+        <a routerLink="/events">Register Now</a>
+      </div>
+    </div>
+
+
+    <div class="col-md-4 animated zoomIn" *ngIf="isGuest">
+      <div class="col-md-12 card">
+        <img src="../../assets/images/about-back.png" alt="Banner" />
+        <h3>Event Name</h3>
+        <p class="muted-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque laboriosam eveniet nobis quos error nihil architecto velit amet repudiandae quo nostrum expedita ipsum dolores, quaerat, explicabo provident dolorem omnis ut.</p>
+        <div class="event-footer">
+          <p><b>Date - </b><span>12-01-2019</span></p>
+          <p><b>Time - </b><span>04:45 PM</span></p>
+          <p><b>Contact - </b><span>someone@example.com</span></p>
+        </div>
+        <a routerLink="/events">Register Now</a>
+      </div>
+    </div>
+
+
+    <div class="col-md-4 animated zoomIn" *ngIf="isGuest">
+      <div class="col-md-12 card">
+        <img src="../../assets/images/about-back.png" alt="Banner" />
+        <h3>Event Name</h3>
+        <p class="muted-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque laboriosam eveniet nobis quos error nihil architecto velit amet repudiandae quo nostrum expedita ipsum dolores, quaerat, explicabo provident dolorem omnis ut.</p>
+        <div class="event-footer">
+          <p><b>Date - </b><span>12-01-2019</span></p>
+          <p><b>Time - </b><span>04:45 PM</span></p>
+          <p><b>Contact - </b><span>someone@example.com</span></p>
+        </div>
+        <a routerLink="/events">Register Now</a>
+      </div>
+    </div>
+
+
+
+    <div class="col-md-4 animated zoomIn" *ngIf="isTech">
+      <div class="col-md-12 card">
+        <img src="../../assets/images/about-back.png" alt="Banner" />
+        <h3>Event Name</h3>
+        <p class="muted-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque laboriosam eveniet nobis quos error nihil architecto velit amet repudiandae quo nostrum expedita ipsum dolores, quaerat, explicabo provident dolorem omnis ut.</p>
+        <div class="event-footer">
+          <p><b>Date - </b><span>12-01-2019</span></p>
+          <p><b>Time - </b><span>04:45 PM</span></p>
+          <p><b>Contact - </b><span>someone@example.com</span></p>
+        </div>
+        <a routerLink="/events">Register Now</a>
+      </div>
+    </div>
+
+
+
+    <div class="col-md-4 animated zoomIn" *ngIf="isGuest">
+      <div class="col-md-12 card">
+        <img src="../../assets/images/about-back.png" alt="Banner" />
+        <h3>Event Name</h3>
+        <p class="muted-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque laboriosam eveniet nobis quos error nihil architecto velit amet repudiandae quo nostrum expedita ipsum dolores, quaerat, explicabo provident dolorem omnis ut.</p>
+        <div class="event-footer">
+          <p><b>Date - </b><span>12-01-2019</span></p>
+          <p><b>Time - </b><span>04:45 PM</span></p>
+          <p><b>Contact - </b><span>someone@example.com</span></p>
+        </div>
+        <a routerLink="/events">Register Now</a>
+      </div>
+    </div>
+
+
+    <div class="col-md-4 animated zoomIn" *ngIf="isGuest">
+      <div class="col-md-12 card">
+        <img src="../../assets/images/about-back.png" alt="Banner" />
+        <h3>Event Name</h3>
+        <p class="muted-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque laboriosam eveniet nobis quos error nihil architecto velit amet repudiandae quo nostrum expedita ipsum dolores, quaerat, explicabo provident dolorem omnis ut.</p>
+        <div class="event-footer">
+          <p><b>Date - </b><span>12-01-2019</span></p>
+          <p><b>Time - </b><span>04:45 PM</span></p>
+          <p><b>Contact - </b><span>someone@example.com</span></p>
+        </div>
+        <a routerLink="/events">Register Now</a>
+      </div>
+    </div>
+
+
+    <div class="col-md-4 animated zoomIn" *ngIf="isTech">
+      <div class="col-md-12 card">
+        <img src="../../assets/images/about-back.png" alt="Banner" />
+        <h3>Event Name</h3>
+        <p class="muted-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque laboriosam eveniet nobis quos error nihil architecto velit amet repudiandae quo nostrum expedita ipsum dolores, quaerat, explicabo provident dolorem omnis ut.</p>
+        <div class="event-footer">
+          <p><b>Date - </b><span>12-01-2019</span></p>
+          <p><b>Time - </b><span>04:45 PM</span></p>
+          <p><b>Contact - </b><span>someone@example.com</span></p>
+        </div>
+        <a routerLink="/events">Register Now</a>
+      </div>
+    </div>
+  </div>
+</section>

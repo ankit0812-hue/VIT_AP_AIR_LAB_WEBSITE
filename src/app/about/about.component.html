@@ -1,0 +1,51 @@
+<section class="row">
+  <div class="col-md-6 image-container">
+  </div>
+  <div class="col-md-6 about-content-container">
+    <div class="col-md-10 col-11 about-content">
+      <i class="fas fa-pen"></i>
+      <p>The AIR Lab is an initiative brought to reality in VIT AP University and is the first of its kind in the country. Set up with the aim of learning about the latest technologies of the field like Deep Learning, Machine Learning and Robotics, the AIR Lab has given students a platform to not only learn about them but also work with them to build something unique. </p>
+      <p>The lab makes an ideal technology-rich environment to promote student-driven learning and provides a new approach to learning rather than the customary way. </p>
+      <p>In the one and half years of its establishment, the lab has grown with more students coming in with unique ideas worth working on. With the support of the faculty, the aim is to be a place of harmony for ideas and latest technologies, and make them a reality.</p>
+    </div>
+  </div>
+</section>
+
+<section class="col-md-12 team-section-main">
+  <div class="col-md-12 section-header-wrap">
+    <h3 class="section-head">
+      Meet The Team
+    </h3>
+  </div>
+
+  <div class="container-fluid team-wrapper">
+    <div class="row">
+      <div class="col-md-4 myMar" *ngFor="let profile of profiles">
+        <div class="col-md-12 team-card">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src={{profile.image}} alt="{{profile.name}}">
+                <h3>{{profile.name}}</h3>
+                <p>{{profile.post}}</p>
+              </div>
+              <div class="flip-card-back">
+                <h3>About</h3>
+                <p *ngIf="profile.summary.length > 0"> {{profile.summary.slice(0, 200)}}..... </p>
+                <p *ngIf="profile.summary.length == 0">Profile is comming soon..</p>
+                <button *ngIf="profile.summary.length > 200" (click)="openModel(profile.id)">Read More</button>
+              </div>
+            </div>
+          </div>
+          <div class="social-contact">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="{{profile.linkedIn}}" target="_blank" *ngIf="profile.linkedIn.length > 0"><i class="fab fa-linkedin"></i></a>
+            <a href="#" *ngIf="profile.linkedIn.length == 0"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-facebook-square"></i></a>
+            <a href="#"><i class="fab fa-whatsapp-square"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

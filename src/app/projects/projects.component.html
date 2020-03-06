@@ -1,0 +1,43 @@
+<div class="row">
+  <div class="col-md-6 project-head">
+    <div class="project-intro">
+      <h1>Projects</h1>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis culpa illum, ad soluta voluptatem quam,
+        doloremque optio nesciunt aut consequatur doloribus perferendis itaque qui saepe corrupti esse error! Libero ad
+        eveniet tenetur esse voluptatem beatae reiciendis cum!</p>
+      <div class="action-container">
+        <button (click)="open(projects, 'ongoing')">Ongoing</button>
+        <button (click)="open(projects, 'acomp')">Accomplished</button>
+      </div>
+    </div>
+  </div>
+  <div #projects class="col-md-6 projects">
+    <div class="col-md-12 project-accomplished animated fadeIn" *ngIf="isAcomplished">
+      <h2>Accomplished Projects</h2>
+      <div class="col-md-12 project-card" *ngFor="let project of acompProj">
+        <img src="{{project.image}}" alt="project.name">
+
+        <h3>{{project.name}}</h3>
+        <p [innerHTML]=project.abstract></p>
+        <p class="developer"><b>Developed By : </b> {{project.developeBy}} </p>
+
+      </div>
+    </div>
+
+    <div class="col-md-12 project-ongoing animated fadeIn" *ngIf="isOngoing">
+      <h2>Ongoing Projects</h2>
+      <div class="col-md-12 project-card" *ngFor="let i of [1,2,3,4,5,6,7,8,9]">
+        <img src="../../assets/images/about-back.png" alt="project">
+
+        <h3>Project Title</h3>
+        <p>Description Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum beatae fuga possimus fugiat
+          unde atque sequi laborum repudiandae odit. Cupiditate, non ut repellendus, incidunt temporibus quae natus
+          necessitatibus nesciunt earum commodi cum impedit error porro tempora. Explicabo quam porro fugiat
+          exercitationem, corporis aliquam unde eaque itaque, inventore ullam ipsum velit libero voluptas autem est iusto
+          veritatis nihil voluptates repellendus vel.</p>
+        <a href="#">Read More</a>
+
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,128 @@
+.row {
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+
+  .contact-form {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0px 30px 0px;
+
+    .contain {
+      display: flex;
+      justify-content: center;
+      padding: 30px 40px 0px 40px;
+      flex-direction: column;
+
+      h1 {
+        height: 40px;
+        line-height: 40px;
+        font-size: 45px;
+        margin-bottom: 25px;
+        img {
+          height: 100%;
+          width: auto;
+          animation: doWave 3.5s 1;
+        }
+      }
+
+      p {
+        margin-bottom: 10px;
+        color: #121212;
+      }
+
+      form > * {
+        width: 85%;
+        margin: 8px 0px 0px 0px;
+      }
+
+      form {
+        .myButton {
+          background-color: #ff4800;
+          color: #fff;
+          border-radius: 0px;
+          width: auto;
+          display: block;
+          padding: 10px 30px;
+          border-radius: 50px;
+        }
+      }
+    }
+  }
+
+  .contact-details {
+    min-height: 100vh;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .details-contain {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+
+      h1 {
+        mat-icon {
+          font-size: 58px;
+          width: 60px;
+          color: #ff4800;
+        }
+      }
+
+      .address {
+        p {
+          color: #fff;
+          line-height: 14px;
+        }
+      }
+
+      .contact {
+        display: flex;
+        flex-direction: column;
+        margin: 45px 0px 25px 0px;
+
+        p {
+          color: #fff;
+          font-size: 16px;
+          line-height: 16px;
+
+          .material-icons {
+            font-size: inherit;
+          }
+
+          mat-icon {
+            color: #00ff87b3;
+          }
+        }
+      }
+
+      .social-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        a {
+          color: #ff4800;
+          font-size: 24px;
+          margin: 0px 10px;
+        }
+      }
+    }
+  }
+}
+
+
+@keyframes doWave {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(60deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
